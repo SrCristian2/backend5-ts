@@ -1,0 +1,40 @@
+{
+  "name": "fastifybk",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc",
+    "start": "node build/src/index.js",
+    "dev": "nodemon"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@fastify/cors": "^8.2.0",
+    "@fastify/formbody": "^7.4.0",
+    "@fastify/type-provider-typebox": "^2.4.0",
+    "@sinclair/typebox": "^0.25.24",
+    "bcrypt": "^5.1.0",
+    "cloudinary": "^1.33.0",
+    "dotenv": "^16.0.3",
+    "fastify": "^4.11.0",
+    "fastify-multer": "^2.0.3",
+    "fs-extra": "^11.1.0",
+    "jsonwebtoken": "^9.0.0",
+    "mongoose": "^6.8.4",
+    "mongoose-validation-error-message-handler": "^1.2.5",
+    "nodemon": "^2.0.20",
+    "typescript": "^4.9.5",
+    "uuid": "^9.0.0"
+  },
+  "devDependencies": {
+    "@types/bcrypt": "^5.0.0",
+    "@types/fs-extra": "^11.0.1",
+    "@types/jsonwebtoken": "^9.0.1",
+    "@types/node": "^18.15.0",
+    "@types/uuid": "^9.0.1"
+  }
+}
