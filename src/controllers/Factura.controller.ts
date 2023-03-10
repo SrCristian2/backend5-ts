@@ -5,6 +5,12 @@ import mongooseErrorHandler from "mongoose-validation-error-message-handler";
 import { FastifyReply, FastifyRequest } from "fastify";
 import { IFactura, IParams } from "../interfaces/comun";
 
+declare module "fastify" {
+  interface FastifyRequest {
+    userId?: string;
+  }
+}
+
 export const createFactura = async (
   req: FastifyRequest<{ Body: IFactura }>,
   reply: FastifyReply
